@@ -1,15 +1,25 @@
 body{
     background-color: black;
 }
-h1{
+.googles{
     color: white;
     text-align-last: center;
     padding-top: 7%;
+    padding-bottom: 4px;
     font: arial;
+    font-size: 40px;
 }
 div{
     text-align-last: right;
 }
-form, h6{
+#bott{
+    text-align-last: center;
+    padding: 7px;
+}
+#search{
+    size: 32;  
+    border-radius: 8px;
+}
+form{
     text-align-last: center;
 }
