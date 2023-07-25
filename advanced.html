@@ -11,15 +11,86 @@
             <i class="fa-solid fa-arrow-right"></i>
         </button>
     </div>               
-    <div id="adv">
+    <div>
         Google Advanced
     </div>
-    <form action="https://www.google.com/search">
-            <input size=32 id="search" type="text" name="q" placeholder="Search Google or type a URL">
+    <p class="text">
+        Find pages with...
+    </p>
+    <form action="https://www.google.com/search" id="f">
+            all these words:<input size=32 type="text" name="as_q"> Type the important words: tri-colour rat terrier
             </br>
+            this exact word or phrase: <input size=32 type="text" name="as_epq"> Put exact words in quotes: "rat terrier"
+            </br>
+            any of these words: <input size=32 type="text" name="as_oq"> Type OR between all the words you want: miniature OR standard
+            </br>
+            none of these words: <input size=32 type="text" name="as_eq"> Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"
+            </br>
+            numbers ranging from: <input size=12 type="text" name="as_nlo">  to  <input size=12 type="text" name="as_nhi"> Put two full stops between the numbers and add a unit of measurement: 10..35 kg, £300..£500, 2010..2011
+            </br>
+            Then narrow your results by...
+            <div>
+                language:
+                <select id="language" name="lr">
+                    <option value="any">any language</option>
+                    <option value="">English</option>
+                </select>                
+            </div>
+            <div>
+                country:              
+                <select id="country" style="width: 200px;" name="cr">
+                    <option value="any">any region</option>
+                    <option value="India">India</option>
+                </select>              
+            </div>
+            <div>
+                last update:
+                <select id="update" name="as_qdr">
+                    <option value="anytime">anytime</option>
+                    <option value="last 24hrs">last 24hrs</option>
+                    <option value="upto a week ago">upto a week ago</option>
+                    <option value="upto a month ago">upto a month ago</option>
+                    <option value="upto a year ago">upto a year ago</option>
+                </select>                
+            </div>
+            <div>
+                site or domain:
+                <input type="text" id="dom" name="as_sitesearch">               
+            </div>
+            <div>
+                terms appearing:
+                <select id="where" name="as_occt">
+                    <option value="anywhere in the page">anywhere in the page</option>
+                    <option value="in the title of the page">in the title of the page</option>
+                    <option value="in the text of the page">in the text of the page</option>
+                    <option value="in the URL of the page">in the URL of the page</option>
+                    <option value="in links to the page">in links to the page</option>
+                </select>                
+            </div>
+            <div>
+                file type:
+                <select id="file" name="as_filetype">
+                    <option value="any">anywhere in the page</option>
+                    <option value="in the title of the page">in the title of the page</option>
+                    <option value="in the text of the page">in the text of the page</option>
+                    <option value="in the URL of the page">in the URL of the page</option>
+                    <option value="in links to the page">in links to the page</option>
+                </select>                
+            </div>
+            <div>
+                <a href="https://support.google.com/websearch/answer/29508">usage rights:</a>
+                <select id="file" name="tbs">
+                    <option value="">not filtered by license</option>
+                    <option value="">free to use or share</option>
+                    <option value="">free to use or share, even commercially</option>
+                    <option value="">free to use share or modify</option>
+                    <option value="">free to use, share or modify, even commercially</option>
+                </select>                
+            </div>
             <button class="bott" type="submit">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 Advanced Search
             </button>
+    </form>
 </body>
 </html>
