@@ -9,7 +9,7 @@ body{
     font: arial;
     font-size: 40px;
 }
-div{
+.tbott{
     text-align-last: right;
 }
 .bott{
@@ -23,4 +23,7 @@ div{
 form{
     text-align-last: center;
     line-height: 25px;
+}
+#adv{
+    color: white;
 }
