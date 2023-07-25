@@ -12,9 +12,9 @@ body{
 div{
     text-align-last: right;
 }
-#bott{
+.bott{
     text-align-last: center;
-    padding: 7px;
+    font-size: 12px;
 }
 #search{
     size: 32;  
@@ -22,4 +22,5 @@ div{
 }
 form{
     text-align-last: center;
+    line-height: 25px;
 }
